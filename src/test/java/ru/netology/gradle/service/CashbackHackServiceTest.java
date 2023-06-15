@@ -1,8 +1,9 @@
 package ru.netology.gradle.service;
 
-import org.testng.annotations.Test;
-import static org.testng.Assert.assertEquals;
 
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class CashbackHackServiceTest {
     @Test
@@ -11,7 +12,8 @@ public class CashbackHackServiceTest {
         int amount = 999;
         int actual = service.remain(amount);
         int expected = 1;
-        assertEquals(expected, actual);
+
+       assertEquals(expected, actual);
     }
     @Test
     public void testAmountAboveBoundary() {
